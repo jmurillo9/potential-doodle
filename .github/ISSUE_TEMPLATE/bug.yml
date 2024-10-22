@@ -1,0 +1,48 @@
+name: "🐞 Bug report"
+description: "File a bug report to help us improve"
+title: "[Bug]:"
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report! Please be as detailed as possible.
+
+  - type: input
+    id: bug-description
+    attributes:
+      label: "Bug description"
+      description: "Please provide a detailed description of the bug"
+      placeholder: "Bug details"
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps-to-reproduce
+    attributes:
+      label: "Steps to reproduce"
+      description: "Please provide the steps to reproduce the issue"
+      placeholder: "1. Step one\n2. Step two\n3. See error"
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: "Expected behavior"
+      description: "What did you expect to happen?"
+      placeholder: "Expected outcome"
+
+  - type: textarea
+    id: actual-behavior
+    attributes:
+      label: "Actual behavior"
+      description: "What actually happened?"
+      placeholder: "Actual outcome"
+
+  - type: input
+    id: environment
+    attributes:
+      label: "Environment"
+      description: "Specify the environment (OS, browser, version, etc.)"
+      placeholder: "e.g., macOS, Safari 14.0"

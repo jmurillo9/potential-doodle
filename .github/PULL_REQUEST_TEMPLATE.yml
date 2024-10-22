@@ -1,0 +1,51 @@
+name: "✨ Pull Request"
+description: "Submit a pull request for code changes"
+title: "[PR]:"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Description
+        Provide a summary of the changes.
+
+  - type: textarea
+    id: pr-description
+    attributes:
+      label: "PR Description"
+      description: "Summarize the changes in this PR"
+      placeholder: "Description of changes"
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: pr-type
+    attributes:
+      label: "Type of change"
+      description: "Select the type of change"
+      options:
+        - label: "Bug fix"
+          required: false
+        - label: "New feature"
+          required: false
+        - label: "Breaking change"
+          required: false
+        - label: "Documentation update"
+          required: false
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: "Checklist"
+      options:
+        - label: "My code follows the style guidelines of this project"
+          required: true
+        - label: "I have performed a self-review of my code"
+          required: true
+        - label: "I have commented my code, particularly in hard-to-understand areas"
+          required: false
+        - label: "I have made corresponding changes to the documentation"
+          required: false
+        - label: "I have added tests that prove my fix is effective or that my feature works"
+          required: false
+        - label: "New and existing unit tests pass locally with my changes"
+          required: false

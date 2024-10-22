@@ -1,0 +1,41 @@
+name: "🚀 Feature request"
+description: "Submit a feature request for consideration"
+title: "[Feature]:"
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please provide as much detail as possible for the feature you'd like to see added.
+
+  - type: input
+    id: feature-description
+    attributes:
+      label: "Feature description"
+      description: "A clear and concise description of the feature"
+      placeholder: "Feature details"
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem-solution
+    attributes:
+      label: "Solution to the problem"
+      description: "Describe how this feature solves the problem"
+      placeholder: "Proposed solution"
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: "Alternatives considered"
+      description: "What other solutions have you considered?"
+      placeholder: "Alternative solutions"
+
+  - type: input
+    id: additional-context
+    attributes:
+      label: "Additional context"
+      description: "Any other context or information to provide?"
+      placeholder: "Other relevant details"
