@@ -1,2 +1,3 @@
-# repo-template
-Murillo-Empire's templated repo configuration 
+# potential doodle
+
+A demo testing out SST.
