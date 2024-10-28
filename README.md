@@ -1,3 +1,3 @@
 # potential doodle
 
-A demo testing out SST.
+A demo going through Next.js dashboard example followed by integrating SST for IaC components.
